@@ -3184,6 +3184,7 @@ standard_planner_proc:
 		msgqno = qno;
 	}
 	current_hint_state = NULL;
+	current_hint_retrieved = false;
 	if (prev_planner)
 		result =  (*prev_planner) (parse, query_string,
 								   cursorOptions, boundParams);
